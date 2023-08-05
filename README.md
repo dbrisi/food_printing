@@ -825,7 +825,7 @@ G28
 ```
 
 ### 3D Ravioli Recipe
-Creating food materials that would print reliably was a challenge. The recipe for our ravioli components is described below. 
+Creating food materials that would print reliably was a challenge. The recipe for our ravioli components is described below.
 
 ##### Pasta Dough
 - Bring 2 cups of water to a boil
@@ -834,12 +834,14 @@ Creating food materials that would print reliably was a challenge. The recipe fo
 - Stir with wooden spoon until cool enough to handle, then knead until smooth
 
 ![image](./read_me_images/dough.JPG)
+
 Ravioli pasta dough
 
 ##### Red Pepper and Cheese Filling
 - Whip 8oz of cream cheese together with 4 tbsp red pepper puree and ¼ cup milk until creamy
 
 ![image](./read_me_images/filling.JPG)
+
 Ravioli red pepper and cheese filling
 
 ##### Tomato-Basil Pesto Garnish
@@ -847,6 +849,7 @@ Ravioli red pepper and cheese filling
 )
 
 ![image](./read_me_images/paste.JPG)
+
 Tomato basil paste topping
 
 
