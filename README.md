@@ -1,6 +1,7 @@
 # food_printing
 
 ## 3D Printing Food Project
+##### Goal: Familiarization with the low-level mechanics of digital manufacturing via 3D printing food. 
 #### MECE 4606 Digital Manufacturing
 #### Miranda Wang, McKenna Gillard, David D’Ambrisi, Yehuda Lehrfield
 #### April, 2022
