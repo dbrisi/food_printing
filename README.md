@@ -69,7 +69,7 @@ Aerial view of our twisted triangle tool path (teal lines) created from the repe
 Side view of our twisted triangle tool path (teal lines) created from the repetier G-Code emulator
 
 ### Twisted Triangle Source Code
-Using a .ipynb we created a python script which was used to generate the G-Code for the twisted triangle. The python script asks for a series of user inputs, and in return, a .gcode file is generated which can be used by the food printers available in Columbia’s Mechanical Engineering Lab. Our python script asks for users to input the side length (millimeters), height per layer (millimeters), side length change increment (in millimeters), degrees of rotation, whether a triangle is single or double, and a file name for the G-Code. The feed rate is automatically set at 200 mm/s and the extrusion is set at .5.
+Using a .py we created a python script which was used to generate the G-Code for the twisted triangle. The python script asks for a series of user inputs, and in return, a .gcode file is generated which can be used by the food printers available in Columbia’s Mechanical Engineering Lab. Our python script asks for users to input the side length (millimeters), height per layer (millimeters), side length change increment (in millimeters), degrees of rotation, whether a triangle is single or double, and a file name for the G-Code. The feed rate is automatically set at 200 mm/s and the extrusion is set at .5.
 
 The script uses the printer head location chosen by the user as the origin. The origin then represents the center of the twisted triangle stack. Triangles are made and in each layer the three points that form the path rotate so that the triangle rotates the degree amount the user specifies.
 
@@ -213,7 +213,7 @@ Aerial view of our twisted triangle tool path (blue lines) created from the NC V
 Side view of our twisted triangle tool path (blue lines) created from the NC Viewer G-Code simulator
 
 ### Two Material Twisted Triangle Source Code
-Using a .ipynb we created a python script which was used to generate the G-Code for the twisted triangle. The python script asks for a series of user inputs and generates a .gcode file which can be used by the food printers available in Columbia’s Mechanical Engineering Lab. Our python script asks for users to input the base side length of an equilateral triangle (millimeters), the height per layer (millimeters), the side length change decrement (in millimeters), the rotation per layer (degrees), whether a triangle layer is single or double (for added stability), the number of materials (1 or 2), how (every ith layer) often a material change (i.e. tool switch) occurs and a file name for the G-Code file. The feed rate is automatically set for both materials at 200 mm/s and the extrusion amount is set at .5.
+Using a .py we created a python script which was used to generate the G-Code for the twisted triangle. The python script asks for a series of user inputs and generates a .gcode file which can be used by the food printers available in Columbia’s Mechanical Engineering Lab. Our python script asks for users to input the base side length of an equilateral triangle (millimeters), the height per layer (millimeters), the side length change decrement (in millimeters), the rotation per layer (degrees), whether a triangle layer is single or double (for added stability), the number of materials (1 or 2), how (every ith layer) often a material change (i.e. tool switch) occurs and a file name for the G-Code file. The feed rate is automatically set for both materials at 200 mm/s and the extrusion amount is set at .5.
 
 The script uses the printer head location chosen by the user as the origin. The origin plus 50 mm in both the x and y axes then represents the center of the twisted triangle stack. We added this offset to ensure no triangle vertices are ever negative. Triangles are made by calculating the location of each vertex relative to the offsetted origin of a circumscribed circle (around the equilateral triangle). For every subsequent layer, the vertices are shifted inward to decrease the size of the triangle and rotated by the specified angle to create the pyramid effect.
 
@@ -434,12 +434,12 @@ The design above the entire ravioli structure was created by a few simple arcs. 
 ![image](./read_me_images/iso_and_top_6.JPG)
 
 ### Ravioli Redefined Source Code Description
-Using a .ipynb file we created a python script which was used to generate the G-Code for our custom ravioli shape. The python script generates a .gcode file with its name specified by the user which can be used by the food printers available in Columbia’s Mechanical Engineering Lab.
+Using a .py file we created a python script which was used to generate the G-Code for our custom ravioli shape. The python script generates a .gcode file with its name specified by the user which can be used by the food printers available in Columbia’s Mechanical Engineering Lab.
 
 The script uses the printer head location chosen by the user as the origin. The origin plus 50 mm in both the x and y axes then represents the “offset origin”. We added this offset to ensure no points for ravioli creation were ever negative.
 
 #### Overview
-Our .ipynb script allows the user to define the overall size of the print, as well as specifics, such as the number of petals, the radius of the petals, the layer height, rotation amount and the size decrement (for pyramid effect). An example of user input is shown below.
+Our .py script allows the user to define the overall size of the print, as well as specifics, such as the number of petals, the radius of the petals, the layer height, rotation amount and the size decrement (for pyramid effect). An example of user input is shown below.
 
 > Enter base diameter (mm) of print area: 50
 > Enter the radius (mm) for each petal: 13
@@ -452,7 +452,7 @@ Our .ipynb script allows the user to define the overall size of the print, as we
 > Enter the degrees of rotation: 3
 > Enter a file name (no extension): ravioliRedefined
 
-In order to generate the g-code in a .ipynb, we created several functions to allow for modular testing and troubleshooting throughout the process. As described above, the printing was broken down into five parts:
+In order to generate the g-code in a .py, we created several functions to allow for modular testing and troubleshooting throughout the process. As described above, the printing was broken down into five parts:
 1. Base
 2. Walls
 3. Filling
@@ -823,6 +823,32 @@ G1 E-2
 G1 X40.0 F400
 G28
 ```
+
+### 3D Ravioli Recipe
+Creating food materials that would print reliably was a challenge. The recipe for our ravioli components is described below. 
+
+##### Pasta Dough
+- Bring 2 cups of water to a boil
+- Combine 3 cups of flour, ½ cup salt, 2 tbsp baking soda and 2 tbsp baking powder in a bowl
+- Stir in ¼ cup vegetable oil and mix in the boiling water
+- Stir with wooden spoon until cool enough to handle, then knead until smooth
+
+![image](./read_me_images/dough.JPG)
+Ravioli pasta dough
+
+##### Red Pepper and Cheese Filling
+- Whip 8oz of cream cheese together with 4 tbsp red pepper puree and ¼ cup milk until creamy
+
+![image](./read_me_images/filling.JPG)
+Ravioli red pepper and cheese filling
+
+##### Tomato-Basil Pesto Garnish
+- [Purchased tomato-basil paste](https://www.amazon.com/Amore-Tomato-Basil-24-Pack-71002/dp/B081PFKVH8
+)
+
+![image](./read_me_images/paste.JPG)
+Tomato basil paste topping
+
 
 ### Photos of Best Print
 
