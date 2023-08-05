@@ -835,14 +835,12 @@ Creating food materials that would print reliably was a challenge. The recipe fo
 
 ![image](./read_me_images/dough.JPG)
 
-Ravioli pasta dough
 
 ##### Red Pepper and Cheese Filling
 - Whip 8oz of cream cheese together with 4 tbsp red pepper puree and ¼ cup milk until creamy
 
 ![image](./read_me_images/filling.JPG)
 
-Ravioli red pepper and cheese filling
 
 ##### Tomato-Basil Pesto Garnish
 - [Purchased tomato-basil paste](https://www.amazon.com/Amore-Tomato-Basil-24-Pack-71002/dp/B081PFKVH8
@@ -850,7 +848,6 @@ Ravioli red pepper and cheese filling
 
 ![image](./read_me_images/paste.JPG)
 
-Tomato basil paste topping
 
 
 ### Photos of Best Print
